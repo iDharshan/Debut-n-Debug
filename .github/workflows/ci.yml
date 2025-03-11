@@ -24,17 +24,14 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m venv venv
-          venv\Scripts\activate
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          venv\Scripts\python -m pip install --upgrade pip
+          venv\Scripts\pip install -r requirements.txt
 
       - name: Run Tests
         run: |
-          venv\Scripts\activate
-          pytest tests/
+          venv\Scripts\python -m pytest tests/
 
       - name: Linting Check
         run: |
-          venv\Scripts\activate
-          pip install flake8
-          flake8 src/
+          venv\Scripts\pip install flake8
+          venv\Scripts\python -m flake8 src/
