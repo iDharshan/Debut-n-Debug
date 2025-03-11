@@ -18,3 +18,5 @@ gradio==4.25.0
 
 # Environment Variables
 python-dotenv==1.0.1
+
+pytest
