@@ -1,6 +1,5 @@
-def main():
-    print("Hello from debut-n-debug!")
+from mcp.server.fastmcp import FastMCP
+
+app = FastMCP()
 
 
-if __name__ == "__main__":
-    main()
