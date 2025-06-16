@@ -62,5 +62,5 @@ def search_repos(keywords):
 
 # Example usage
 if __name__ == "__main__":
-    keywords = ["Python"]  # Replace with desired keywords, e.g., ["Python", "AI"]
+    keywords = ["Python"]  
     search_repos(keywords)
